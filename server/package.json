@@ -50,9 +50,11 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "build": "rm -rf build; rm -rf node_modules; npm install -g yarn; yarn install; yarn run tsc;",
+    "build": "rm -rf build && rm -rf node_modules && npm install -g yarn && yarn install && yarn run tsc",
     "start": "node ./build/app.js",
-    "go": "TS_NODE_FILES=true nodemon --inspect=0.0.0.0:9222 -r -L ts-node/register --insecure-http-parser src/app.ts --exec 'node'"
+    "startwin": "node .\\build\\app.js",
+    "go": "TS_NODE_FILES=true nodemon --inspect=0.0.0.0:9222 -r -L ts-node/register --insecure-http-parser src/app.ts --exec 'node'",
+    "gowin": "npm install -g nodemon && SET TS_NODE_FILES=true && nodemon --inspect=0.0.0.0:9222 -r -L ts-node/register --insecure-http-parser src\\app.ts --exec node"
   },
   "devDependencies": {}
 }
