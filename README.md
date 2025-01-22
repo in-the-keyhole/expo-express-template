@@ -28,7 +28,7 @@ git (including git bash), nvm, Node 22.12.0, yarn, OpenJDK 17+, Android Studio, 
   - Java https://aka.ms/download-jdk/microsoft-jdk-17.0.13-windows-x64.msi
   - Use git bash instead of Powershell or Command Prompt
   - Install the Android SDK to a path with no whitespace (something like C:\Android\sdk)
-  - Set ANDROID_HOME to { your android sdk path} in the environment variables
+  - Set ANDROID_HOME to {your android sdk path} in the environment variables
   - Add {your android sdk path}\sdk\platforms and {your android sdk path}\sdk\platform-tools to your Path environment variable
   - Run this in git bash to allow long file names.
 

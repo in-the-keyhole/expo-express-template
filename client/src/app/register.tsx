@@ -55,7 +55,9 @@ const Register = () => {
       setMessages('');
       setValid(true);
     } else {
-      setMessages('Please enter all fields. Password must be at least 8 characters.');
+      setMessages(
+        'Please enter all fields. Password must be at least 8 characters.'
+      );
       setValid(false);
     }
   }, [firstName, lastName, email, phone, sortOrder, password, valPassword]);
@@ -122,9 +124,7 @@ const Register = () => {
               />
             </ThemedView>
             <ThemedView style={styles.inputView}>
-              <ThemedText style={styles.inputText} >
-                Password:
-              </ThemedText>
+              <ThemedText style={styles.inputText}>Password:</ThemedText>
               <ThemedTextInput
                 autoComplete="password-new"
                 value={password}
@@ -144,9 +144,7 @@ const Register = () => {
               />
             </ThemedView>
             <ThemedView style={styles.checkboxView}>
-              <ThemedText style={styles.checkboxText}>
-                Email Opt-In:
-              </ThemedText>
+              <ThemedText style={styles.checkboxText}>Email Opt-In:</ThemedText>
               <Checkbox
                 style={styles.checkbox}
                 value={emailOptIn}
@@ -154,9 +152,7 @@ const Register = () => {
               />
             </ThemedView>
             <ThemedView style={styles.inputView}>
-              <ThemedText style={styles.inputText}>
-                Sort Order:
-              </ThemedText>
+              <ThemedText style={styles.inputText}>Sort Order:</ThemedText>
               <ThemedPicker
                 value={sortOrder}
                 setValue={setSortOrder}

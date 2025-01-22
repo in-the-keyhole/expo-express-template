@@ -1,8 +1,3 @@
-/**
- * Copyright © 2024-2025 Boardman Enterprises, LLC
- * All rights reserved.
- */
-
 const SORT_UP = 'UP'
 const SORT_DOWN = 'DOWN'
 

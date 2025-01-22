@@ -1,8 +1,3 @@
-/**
- * Copyright © 2024-2025 Boardman Enterprises, LLC
- * All rights reserved.
- */
-
 export interface BaseState {
   session?: string | null;
   isLoading: boolean;
