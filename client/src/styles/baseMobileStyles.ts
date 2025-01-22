@@ -1,0 +1,405 @@
+import { Platform } from "react-native";
+
+const baseMobileStyles = {
+  containerPadding: {
+    display: 'flex',
+    padding: 8,
+  },
+  containerSmallPadding: {
+    display: 'flex',
+    padding: 0,
+  },
+  container: {
+    fontFamily: 'Arial',
+  },
+  containerMarginBottom: {
+    flex: 1,
+    marginBottom: 48,
+    fontFamily: 'Arial',
+  },
+  flexy: {
+    display: 'flex',
+    fontFamily: 'Arial',
+  },
+  flex1: {
+    display: 'flex',
+    flex: 1,
+    fontFamily: 'Arial',
+  },
+  flex1Border: {
+    display: 'flex',
+    flex: 1,
+    fontFamily: 'Arial',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    margin: 4,
+    borderRadius: 8,
+  },
+  transparent: {
+    backgroundColor: 'rgba(50,50,50,0.7)',
+  },
+  containerCenter: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontFamily: 'Arial',
+  },
+  hide: {
+    display: 'none',
+  },
+  leftsidebar: {
+    fontSize: 16,
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
+    margin: 4,
+    paddingVertical: 8,
+    paddingHorizontal: 4,
+    minWidth: 395,
+    fontFamily: 'Arial',
+  },
+  headerButtonView: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    marginTop: 8,
+    fontFamily: 'Arial',
+  },
+  headerButton: {
+    marginLeft: 16,
+    marginTop: 8,
+    fontFamily: 'Arial',
+  },
+  headerRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    height: 32,
+    fontFamily: 'Arial',
+  },
+  headerText: {
+    fontFamily: 'Arial',
+  },
+  headerContent: {
+    width: 200,
+    paddingTop: 4,
+    paddingLeft: 8,
+    fontFamily: 'Arial',
+  },
+  txHeader: {
+    display: 'flex',
+    paddingTop: 12,
+    fontFamily: 'Arial',
+  },
+  account: {
+    paddingBottom: 12,
+    fontFamily: 'Arial',
+  },
+  oneLineTransactions: {
+    fontSize: 8,
+    fontFamily: 'Arial',
+    paddingHorizontal: 8,
+    paddingVertical: 0,
+  },
+  transactions: {
+    fontFamily: 'Arial',
+    paddingHorizontal: 8,
+    paddingVertical: 8,
+  },
+  transaction: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexGrow: 1,
+    margin: 0,
+    padding: 0,
+    borderWidth: 0,
+    fontFamily: 'Arial',
+    maxHeight: 31,
+  },
+  transaction_row_2_cell_color: {
+    color: 'white',
+  },
+  txsplit_blank: {
+    minHeight: 33,
+    maxHeight: 33,
+    minWidth: 46,
+    maxWidth: 46,
+    fontFamily: 'Arial',
+  },
+  txsplits: {
+    fontSize: 8,
+    fontFamily: 'Arial',
+  },
+  txsplit: {
+    display: 'flex',
+    flexDirection: 'row',
+    margin: 0,
+    padding: 0,
+    borderWidth: 0,
+    fontFamily: 'Arial',
+  },
+  modify_split: {
+    display: 'flex',
+    flexDirection: 'row',
+    margin: 0,
+    padding: 0,
+    borderWidth: 0,
+    fontFamily: 'Arial',
+  },
+  txsplit_row_hover: {
+    backgroundColor: 'gray',
+    color: 'white',
+    cursor: 'pointer',
+    fontSize: 24,
+    fontFamily: 'Arial',
+  },
+  txsplit_row: {},
+  txsplit_cell: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    paddingTop: 3,
+    paddingLeft: 4,
+    paddingBottom: 2,
+    paddingRight: 4,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#eeeeee',
+    fontFamily: 'Arial',
+  },
+  txsplit_cell_left: {
+    textAlign: 'left',
+    fontFamily: 'Arial',
+  },
+  txsplit_cell_right: {
+    textAlign: 'right',
+    fontFamily: 'Arial',
+  },
+  txsplit_row_del_hover: {
+    backgroundColor: '#5b4266',
+    cursor: 'auto',
+  },
+  txsplit_del: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    paddingTop: 3,
+    paddingLeft: 0,
+    paddingBottom: 2,
+    paddingRight: 4,
+    borderWidth: 0,
+    borderStyle: 'solid',
+    borderColor: '#eeeeee',
+    minWidth: 30,
+    maxWidth: 30,
+    fontFamily: 'Arial',
+    alignItems: 'center',
+  },
+  grow: {
+    display: 'flex',
+    flex: 1,
+  },
+  collapsibleContent: {
+    borderRadius: 5,
+    borderWidth: 1,
+    position: 'absolute',
+    zIndex: 2,
+    elevation: 2,
+    fontFamily: 'Arial',
+    backgroundColor: '#151718',
+  },
+  homePageText: {
+    fontSize: 16,
+    fontFamily: 'Arial',
+  },
+  buttonView: {
+    fontFamily: 'Arial',
+  },
+  buttonWidth: {
+    width: 94,
+    paddingBottom: 16,
+    marginRight: Platform.OS === 'ios' ? 0 : 8,
+    fontFamily: 'Arial',
+  },
+  largeButtonWidth: {
+    width: 150,
+    paddingBottom: 16,
+    fontFamily: 'Arial',
+  },
+  accountText: {
+    marginVertical: 4,
+    fontFamily: 'Arial',
+  },
+  bodyText: {
+    fontSize: 16,
+    paddingBottom: 8,
+    fontFamily: 'Arial',
+  },
+  bodyTextSmallPad: {
+    fontSize: 16,
+    fontFamily: 'Arial',
+  },
+  checkView: {
+    display: 'flex',
+    flexDirection: 'row',
+    paddingBottom: 24,
+    fontFamily: 'Arial',
+  },
+  checkText: {
+    fontSize: 16,
+    fontFamily: 'Arial',
+  },
+  inputView: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginBottom: 6,
+    fontFamily: 'Arial',
+  },
+  inputText: {
+    fontSize: 16,
+    paddingBottom: 0,
+    minWidth: 200,
+    fontFamily: 'Arial',
+  },
+  checkbox: {
+    marginTop: 1,
+    marginHorizontal: 7,
+  },
+  sel_buttons: {
+    marginTop: 10,
+  },
+  currency: {
+    display: 'flex',
+    minWidth: 140,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 16,
+    justifyContent: 'center',
+  },
+  indent1: {
+    marginLeft: 6,
+  },
+  indent2: {
+    marginLeft: 12,
+  },
+  jrow: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginBottom: 4,
+  },
+  jcolumn: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  txDateWidth: {
+    minWidth: 80,
+    maxWidth: 80,
+    fontFamily: 'Arial',
+  },
+  txCheckNoWidth: {
+    minWidth: 55,
+    maxWidth: 55,
+    fontFamily: 'Arial',
+  },
+  txStatusWidth: {
+    minWidth: 50,
+    maxWidth: 50,
+    textAlign: 'center',
+    fontFamily: 'Arial',
+  },
+  txAmountWidth: {
+    minWidth: 85,
+    maxWidth: 85,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 12,
+  },
+  txBalanceWidth: {
+    minWidth: 85,
+    maxWidth: 85,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 12,
+  },
+  txCommissionWidth: {
+    minWidth: 65,
+    maxWidth: 65,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 12,
+  },
+  txNumSharesWidth: {
+    minWidth: 55,
+    maxWidth: 55,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 12,
+  },
+  txSplitDescWidth: {
+    minWidth: 130,
+    maxWidth: 130,
+    fontFamily: 'Arial',
+  },
+  txSplitCatWidth: {
+    minWidth: 120,
+    maxWidth: 120,
+    fontFamily: 'Arial',
+  },
+  txSplitCurrencyWidth: {
+    minWidth: 80,
+    maxWidth: 80,
+    textAlign: 'right',
+    fontFamily: 'monospace',
+    fontSize: 12,
+  },
+  width17: {
+    minWidth: 17,
+    maxWidth: 17,
+  },
+  width24: {
+    minWidth: 25,
+    maxWidth: 25,
+  },
+  width50: {
+    minWidth: 50,
+    maxWidth: 50,
+  },
+  width65: {
+    minWidth: 65,
+    maxWidth: 65,
+  },
+  width82: {
+    minWidth: 82,
+    maxWidth: 82,
+  },
+  width100: {
+    minWidth: 100,
+    maxWidth: 100,
+  },
+  width123: {
+    minWidth: 123,
+    maxWidth: 123,
+  },
+  width150: {
+    flexGrow: 1,
+    minWidth: 150,
+    maxWidth: '45%',
+  },
+  width200: {
+    minWidth: 200,
+    maxWidth: 200,
+  },
+  width300: {
+    minWidth: 300,
+    maxWidth: 300,
+  },
+  width346: {
+    minWidth: 346,
+    maxWidth: 346,
+  },
+  width350: {
+    minWidth: 350,
+    maxWidth: 350,
+  },
+};
+
+export default baseMobileStyles;

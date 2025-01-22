@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "name": "Expo Template",
+    "slug": "expo_template",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "backgroundColor": "#eeeeee"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expotemplate",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "App requires local network access to do stuff",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#888888"
+      },
+      "package": "com.expo_template",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to choose one for processing.",
+          "cameraPermission": "The app takes pictures for processing.",
+          "microphonePermission": "The app records audio for processing voice commands."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "The app takes pictures for processing.",
+          "microphonePermission": "The app records audio for processing voice commands.",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "your EAS project id here"
+      }
+    },
+    "owner": "mitlicense"
+  }
+}

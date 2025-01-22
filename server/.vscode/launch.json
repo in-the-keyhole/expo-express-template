@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "ws://0.0.0.0:9222",
+            "request": "launch",
+            "url": "ws://0.0.0.0:9222"
+        }
+    ]
+}

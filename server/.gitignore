@@ -1,0 +1,10 @@
+node_modules/
+
+.history/
+
+# macOS
+.DS_Store
+
+build/
+
+.eslintcache

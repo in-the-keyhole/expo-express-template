@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es6", "dom", "dom.iterable", "es2021"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "target": "es6",
+  },
+  "include": ["index.ts", "src/**/*", "scripts/**/*"],
+  "exclude": [
+    "build/*",
+  ]
+}

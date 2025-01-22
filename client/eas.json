@@ -1,0 +1,34 @@
+{
+    "build": {
+        "development": {
+            "node": "22.12.0",
+            "environment": "development",
+            "developmentClient": true,
+            "distribution": "internal"
+        },
+        "development-simulator": {
+            "node": "22.12.0",
+            "environment": "development",
+            "developmentClient": true,
+            "distribution": "internal",
+            "ios": {
+              "simulator": true
+            }
+        },
+        "preview": {
+            "node": "22.12.0",
+            "environment": "preview",
+            "distribution": "internal",
+            "android": {
+                "gradleCommand": ":app:assembleRelease"
+            },
+            "ios": {
+                "enterpriseProvisioning": "adhoc"
+              }
+          },
+        "production": {
+            "node": "22.12.0",
+            "environment": "production"
+        }
+    }
+}

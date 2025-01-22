@@ -1,0 +1,133 @@
+import { transform } from "@babel/core";
+
+const iosStyles = {
+  sidebarIcon: {
+    marginLeft: 8,
+    marginRight: 8,
+    marginTop: 4,
+  },
+  header: {
+    fontSize: 24,
+    paddingBottom: 16,
+    fontFamily: 'Arial',
+  },
+  header2: {
+    fontSize: 20,
+    paddingBottom: 16,
+    fontFamily: 'Arial',
+  },
+  header3: {
+    fontSize: 18,
+    paddingBottom: 8,
+    fontFamily: 'Arial',
+  },
+  headerIcon: {
+    marginLeft: 8,
+    marginRight: 8,
+    marginTop: 4,
+  },
+  modal: {
+    marginTop: 64,
+    padding: 8,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    maxHeight: '87%',
+  },
+  transaction_check: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    paddingTop: 3,
+    paddingBottom: 0,
+    paddingRight: 0,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#eeeeee',
+    minHeight: 26,
+    minWidth: 30,
+    maxWidth: 30,
+    fontFamily: 'Arial',
+  },
+  transaction_cell: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    paddingTop: 3,
+    paddingLeft: 4,
+    paddingBottom: 2,
+    paddingRight: 4,
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#eeeeee',
+    textAlign: 'left',
+    fontFamily: 'Arial',
+    fontSize: 12,
+  },
+  transaction_cell_right: {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    paddingTop: 3,
+    paddingLeft: 4,
+    paddingBottom: 2,
+    paddingRight: 4,
+    borderStyle: 'solid',
+    borderColor: '#eeeeee',
+    textAlign: 'right',
+    fontFamily: 'Arial',
+    fontSize: 12,
+  },
+  row_1: {
+    minHeight: 26,
+  },
+  row_2: {
+    color: 'white',
+    backgroundColor: '#4c3f53',
+    minHeight: 25,
+  },
+  checkboxView: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginBottom: 10,
+    fontFamily: 'Arial',
+  },
+  checkboxText: {
+    fontSize: 16,
+    paddingBottom: 0,
+    minWidth: 140,
+    textAlign: 'left',
+    fontFamily: 'Arial',
+  },
+  txOneLineCategoryWidth: {
+    minWidth: 150,
+    maxWidth: 150,
+    fontFamily: 'Arial',
+  },
+  txCategoryWidth: {
+    minWidth: 225,
+    maxWidth: 225,
+    fontFamily: 'Arial',
+  },
+  button: {
+    flex: 1,
+    alignSelf: 'flex-end',
+    alignItems: 'center',
+  },
+  flex1Center: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  cameraButtonContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'transparent',
+    margin: 64,
+  },
+  cameraButtonText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+};
+
+export default iosStyles;
